@@ -1,0 +1,18 @@
+{
+  "name": "global-machinery",
+  "version": "1.0.0",
+  "description": "test global machinery",
+  "main": "./assets/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -watch --incluthe-path sass ./assets/scss/style.scss ./assets/css/style.css"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Marco Aspeitia",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
