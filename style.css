@@ -530,7 +530,7 @@ table {
 a {
 	color: #4169e1;
 }
-
+/*
 a:visited {
 	color: #800080;
 }
@@ -548,7 +548,7 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
-}
+} */
 
 /* Forms
 --------------------------------------------- */
@@ -740,11 +740,6 @@ textarea {
 --------------------------------------------- */
 .sticky {
 	display: block;
-}
-
-.post,
-.page {
-	margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
