@@ -1,5 +1,5 @@
 
-$(function($) {
+(function($) {
 
     "use strict";
 
@@ -769,4 +769,4 @@ $(function($) {
             window.location.hash = hash;
         });
     }
-});
+})( jQuery );
