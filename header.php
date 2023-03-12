@@ -22,38 +22,78 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<!--====== Start Preloader ======-->
+<div class="preloader">
+	<div class="lds-ellipsis">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+<!--====== End Preloader ======-->
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'global-machinery' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$global_machinery_description = get_bloginfo( 'description', 'display' );
-			if ( $global_machinery_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $global_machinery_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'global-machinery' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+	<!--====== Start Header ======-->
+	<header id="masthead" class="header-area header-area-v1 site-header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="top-left">
+							<ul>
+								<li><span><i class="flaticon-factory"></i> We work with global industries!</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="top-right">
+							<ul class="social-link">
+								<li><a href="#"><i class="icofont-facebook"></i></a></li>
+								<li><a href="#"><i class="icofont-twitter"></i></a></li>
+								<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								<li><a href="#"><i class="icofont-skype"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-navigation">
+			<div class="nav-container">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 logo-col col-6">
+							<div class="site-branding">
+								<div class="brand-logo">
+									<a href="<?php esc_attr( esc_url( home_url( '/' ) ) );?>"><img src="<?php echo esc_attr( esc_url( get_template_directory_uri(  ) ) ); ?>/assets/images/logo-global-machinery.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-9 col-6">
+							<div class="nav-menu">
+								<!-- Navbar Close Icon -->
+								<div class="navbar-close">
+									<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+								</div>
+								<nav id="site-navigation" class="main-menu">
+									<?php
+									wp_nav_menu(
+										array(
+											'theme_location' => 'menu-1',
+											'menu_id'        => 'primary-menu',
+										)
+									);
+									?>
+								</nav>
+							</div>
+							<!-- Navbar Toggler -->
+							<div class="navbar-toggler float-right">
+								<span></span><span></span><span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header><!--====== End Header ======-->

@@ -14,121 +14,10 @@
 
 get_header();
 ?>
-
-	<!--====== Start Preloader ======-->
-	<div class="preloader">
-            <div class="lds-ellipsis">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div><!--====== End Preloader ======-->
-        <!--====== Start Header ======-->
-        <header class="header-area header-area-v1">
-            <div class="header-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="top-left">
-                                <ul>
-                                    <li><span><i class="flaticon-factory"></i> We work with global industries!</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="top-right">
-                                <ul class="social-link">
-                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icofont-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="icofont-skype"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-navigation">
-                <div class="nav-container">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-3 logo-col col-6">
-                                <div class="site-branding">
-                                    <div class="brand-logo">
-                                        <a href="index.html"><img src="assets/images/logo-global-machinery.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-9 col-6">
-                                <div class="nav-menu">
-                                    <!-- Navbar Close Icon -->
-                                    <div class="navbar-close">
-                                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                                    </div>
-                                    <nav class="main-menu">
-                                        <ul>
-                                            <li class="menu-item menu-item-has-children"><a href="index.html">Home</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                    <li><a href="index-3.html">Home 03</a></li>
-                                                    <li><a href="#">Home Onepage</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="onepage-home.html">Onepage Home One</a></li>
-                                                            <li><a href="onepage-home-two.html">Onepage Home Two</a></li>
-                                                            <li><a href="onepage-home-three.html">Onepage Home Three</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item"><a href="about.html">About</a></li>
-                                            <li class="menu-item menu-item-has-children"><a href="#">Project</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="project.html">Project</a></li>
-                                                    <li><a href="project-details.html">Project Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item menu-item-has-children"><a href="#">Shop</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="shop.html">Our Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="service.html">Our Service</a></li>
-                                                    <li><a href="service-details.html">Service Details</a></li>
-                                                    <li><a href="team.html">Our Team</a></li>
-                                                    <li><a href="team-details.html">Team Details</a></li>
-                                                    <li><a href="404.html">404</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item menu-item-has-children"><a href="#">Blog</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <!-- Navbar Toggler -->
-                                <div class="navbar-toggler float-right">
-                                    <span></span><span></span><span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header><!--====== End Header ======-->
         <!--====== Start Banner section ======-->
         <section class="banner-area-v1">
             <div class="hero-slider-one">
-                <div class="single-hero bg_cover" style="background-image: url(assets/images/bg/22925.jpg);">
+                <div class="single-hero bg_cover" style="background-image: url(<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/bg/22925.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -141,7 +30,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="single-hero bg_cover" style="background-image: url(assets/images/bg/22925.jpg);">
+                <div class="single-hero bg_cover" style="background-image: url(<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/bg/22925.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -154,7 +43,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="single-hero bg_cover" style="background-image: url(assets/images/bg/22925.jpg);">
+                <div class="single-hero bg_cover" style="background-image: url(<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/bg/22925.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -233,7 +122,7 @@ get_header();
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about-img-box">
-                            <img src="assets/images/about/about-1.jpg" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/about/about-1.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -255,14 +144,14 @@ get_header();
                             <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
                                 in the 15th century who is thought to have scrambled parts of  for use in a type
                                 specimen book. It usually begins consectetur.</p>
-                            <img src="assets/images/sign.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/sign.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section><!--====== End About section ======-->
         <!--====== End Service section ======-->
-        <section class="service-area-v1 bg_cover pt-135 pb-120" style="background-image: url(assets/images/bg/service-bg-1.jpg);">
+        <section class="service-area-v1 bg_cover pt-135 pb-120" style="background-image: url(<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/bg/service-bg-1.jpg);">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -282,7 +171,7 @@ get_header();
                     <div class="col-lg-4">
                         <div class="service-item text-center mb-55">
                             <div class="service-img">
-                                <img src="assets/images/service/service-1.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/service/service-1.jpg" alt="">
                             </div>
                             <div class="service-content">
                                 <span class="position">Unique Technologie</span>
@@ -294,7 +183,7 @@ get_header();
                     <div class="col-lg-4">
                         <div class="service-item text-center mb-55">
                             <div class="service-img">
-                                <img src="assets/images/service/service-2.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/service/service-2.jpg" alt="">
                             </div>
                             <div class="service-content">
                                 <span class="position">Unique Technologie</span>
@@ -306,7 +195,7 @@ get_header();
                     <div class="col-lg-4">
                         <div class="service-item text-center mb-55">
                             <div class="service-img">
-                                <img src="assets/images/service/service-3.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/service/service-3.jpg" alt="">
                             </div>
                             <div class="service-content">
                                 <span class="position">Unique Technologie</span>
@@ -318,7 +207,7 @@ get_header();
                     <div class="col-lg-4">
                         <div class="service-item text-center mb-55">
                             <div class="service-img">
-                                <img src="assets/images/service/service-2.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/service/service-2.jpg" alt="">
                             </div>
                             <div class="service-content">
                                 <span class="position">Unique Technologie</span>
@@ -520,7 +409,7 @@ get_header();
         <!--====== Start Project-area section ======-->
         <section class="project-area-v1">
             <div class="project-main-section">
-                <div class="project-bg bg_cover" style="background-image: url(assets/images/bg/project-bg-1.jpg);"></div>
+                <div class="project-bg bg_cover" style="background-image: url(<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/bg/project-bg-1.jpg);"></div>
                 <div class="container">
                     <div class="col-lg-8">
                         <div class="section-title section-white-title mb-100">
@@ -539,11 +428,11 @@ get_header();
                         <div class="col-lg-4">
                             <div class="project-item">
                                 <div class="project-img">
-                                    <img src="assets/images/project/project-1.jpg" alt="">
+                                    <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/project/project-1.jpg" alt="">
                                     <div class="project-overlay">
                                         <div class="project-content">
                                             <div class="icon">
-                                                <a href="assets/images/project/project-1.jpg" class="popup-icon img-popup"><i class="icofont-plus"></i></a>
+                                                <a href="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/project/project-1.jpg" class="popup-icon img-popup"><i class="icofont-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -557,11 +446,11 @@ get_header();
                         <div class="col-lg-4">
                             <div class="project-item">
                                 <div class="project-img">
-                                    <img src="assets/images/project/project-2.jpg" alt="">
+                                    <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/project/project-2.jpg" alt="">
                                     <div class="project-overlay">
                                         <div class="project-content">
                                             <div class="icon">
-                                                <a href="assets/images/project/2.jpg" class="popup-icon img-popup"><i class="icofont-plus"></i></a>
+                                                <a href="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/project/2.jpg" class="popup-icon img-popup"><i class="icofont-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -575,11 +464,11 @@ get_header();
                         <div class="col-lg-4">
                             <div class="project-item">
                                 <div class="project-img">
-                                    <img src="assets/images/project/project-3.jpg" alt="">
+                                    <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/project/project-3.jpg" alt="">
                                     <div class="project-overlay">
                                         <div class="project-content">
                                             <div class="icon">
-                                                <a href="assets/images/project/project-3.jpg" class="popup-icon img-popup"><i class="icofont-plus"></i></a>
+                                                <a href="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/project/project-3.jpg" class="popup-icon img-popup"><i class="icofont-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -593,11 +482,11 @@ get_header();
                         <div class="col-lg-4">
                             <div class="project-item">
                                 <div class="project-img">
-                                    <img src="assets/images/project/project-2.jpg" alt="">
+                                    <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/project/project-2.jpg" alt="">
                                     <div class="project-overlay">
                                         <div class="project-content">
                                             <div class="icon">
-                                                <a href="assets/images/project/2.jpg" class="popup-icon img-popup"><i class="icofont-plus"></i></a>
+                                                <a href="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/project/2.jpg" class="popup-icon img-popup"><i class="icofont-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -633,7 +522,7 @@ get_header();
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="team-item mb-40">
                             <div class="team-img">
-                                <img src="assets/images/team/team-1.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/team/team-1.jpg" alt="">
                             </div>
                             <div class="team-info">
                                 <div class="team-shape"></div>
@@ -656,7 +545,7 @@ get_header();
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="team-item mb-40">
                             <div class="team-img">
-                                <img src="assets/images/team/team-2.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/team/team-2.jpg" alt="">
                             </div>
                             <div class="team-info">
                                 <div class="team-shape"></div>
@@ -679,7 +568,7 @@ get_header();
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="team-item mb-40">
                             <div class="team-img">
-                                <img src="assets/images/team/team-3.jpg" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/team/team-3.jpg" alt="">
                             </div>
                             <div class="team-info">
                                 <div class="team-shape"></div>
@@ -708,7 +597,7 @@ get_header();
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="testimonial-img">
-                            <img src="assets/images/testimonial/testimonial-1.png" alt="">
+                            <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/testimonial/testimonial-1.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -731,7 +620,7 @@ get_header();
                                         magna aliqua enim minim veniam nostrud ullam
                                         in voluptate velit esse cillum dolore”.</p>
                                     <div class="td-author-info mt-40">
-                                        <div class="td-thumb bg_cover" style="background-image: url(assets/images/t-thumb-1.jpg);">
+                                        <div class="td-thumb bg_cover" style="background-image: url(<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/t-thumb-1.jpg);">
                                             <i class="icon">“</i>
                                         </div>
                                         <div class="td-author">
@@ -758,7 +647,7 @@ get_header();
                                         magna aliqua enim minim veniam nostrud ullam
                                         in voluptate velit esse cillum dolore”.</p>
                                     <div class="td-author-info mt-40">
-                                        <div class="td-thumb bg_cover" style="background-image: url(assets/images/t-thumb-1.jpg);">
+                                        <div class="td-thumb bg_cover" style="background-image: url(<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/t-thumb-1.jpg);">
                                             <i class="icon">“</i>
                                         </div>
                                         <div class="td-author">
@@ -804,7 +693,7 @@ get_header();
                     <div class="col-lg-4">
                         <div class="blog-post-item mb-30">
                             <div class="post-thumbnail">
-                                <img src="assets/images/blog/blog-grid-1.jpg" alt="blog-grid">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/blog/blog-grid-1.jpg" alt="blog-grid">
                                 <a href="#" class="date">20 January, 2020</a>
                             </div>
                             <div class="entry-content">
@@ -821,7 +710,7 @@ get_header();
                     <div class="col-lg-4">
                         <div class="blog-post-item mb-30">
                             <div class="post-thumbnail">
-                                <img src="assets/images/blog/blog-grid-2.jpg" alt="blog-grid">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/blog/blog-grid-2.jpg" alt="blog-grid">
                                 <a href="#" class="date">20 January, 2020</a>
                             </div>
                             <div class="entry-content">
@@ -838,7 +727,7 @@ get_header();
                     <div class="col-lg-4">
                         <div class="blog-post-item mb-30">
                             <div class="post-thumbnail">
-                                <img src="assets/images/blog/blog-grid-3.jpg" alt="blog-grid">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/blog/blog-grid-3.jpg" alt="blog-grid">
                                 <a href="#" class="date">20 January, 2020</a>
                             </div>
                             <div class="entry-content">
@@ -855,7 +744,7 @@ get_header();
                     <div class="col-lg-4">
                         <div class="blog-post-item mb-30">
                             <div class="post-thumbnail">
-                                <img src="assets/images/blog/blog-grid-2.jpg" alt="blog-grid">
+                                <img src="<?php echo esc_url( get_template_directory_uri(  ) ); ?>/assets/images/blog/blog-grid-2.jpg" alt="blog-grid">
                                 <a href="#" class="date">20 January, 2020</a>
                             </div>
                             <div class="entry-content">
